@@ -1,0 +1,1635 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Orders"})
+
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    @@include("partials/menu.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                @@include("partials/page-title.html", {"pagetitle": "Ecommerce", "title": "Orders"})
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body  pt-0">
+
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-tabs-custom nav-justified p-3 pb-0" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#all_order" role="tab">
+                                            All Orders
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#active_order" role="tab">
+                                            Active
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#paid_order" role="tab">
+                                            Paid
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#unpaid_order" role="tab">
+                                            Unpaid
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content p-3 text-muted">
+                                    <div class="tab-pane active" id="all_order" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table
+                                                class="table table-centered datatable dt-responsive nowrap table-striped border"
+                                                style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead class="table-topbar text-uppercase">
+                                                    <tr class="">
+                                                        <th>Order ID</th>
+                                                        <th>Product</th>
+                                                        <th>Date</th>
+                                                        <th>Billing Name</th>
+                                                        <th>Total</th>
+                                                        <th>Payment Status</th>
+                                                        <th>Payment Method</th>
+                                                        <th colspan="2">Action</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <!-- end thead -->
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1231</a>
+                                                        </td>
+                                                        <td>Wool Runners</td>
+                                                        <td>
+                                                            04 Apr, 2021
+                                                        </td>
+                                                        <td>Walter Brown</td>
+
+                                                        <td>
+                                                            $172
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+
+                                                        <td>
+                                                            Paypal
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1232</a>
+                                                        </td>
+                                                        <td>Adidas (pink)</td>
+                                                        <td>
+                                                            03 Apr, 2021
+                                                        </td>
+                                                        <td>Jimmy Barker</td>
+
+                                                        <td>
+                                                            $165
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Unpaid
+                                                            </div>
+                                                        </td>
+                                                        <td> - </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1233</a>
+                                                        <td>Nike</td>
+                                                        </td>
+                                                        <td>
+                                                            03 Apr, 2021
+                                                        </td>
+                                                        <td>Donald Bailey</td>
+
+                                                        <td>
+                                                            $146
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Paypal
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1234</a>
+                                                        </td>
+                                                        <td>Jordan Eclipse</td>
+                                                        <td>
+                                                            02 Apr, 2021
+                                                        </td>
+                                                        <td>Paul Jones</td>
+
+                                                        <td>
+                                                            $183
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-info font-size-12">Pending
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1235</a>
+                                                        </td>
+                                                        <td>Air Jordan 1 TS</td>
+                                                        <td>
+                                                            01 Apr, 2021
+                                                        </td>
+                                                        <td>Jefferson Allen</td>
+
+                                                        <td>
+                                                            $160
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-danger font-size-12">Refund
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Mastercard
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1236</a>
+                                                        </td>
+                                                        <td>Adidas (black)</td>
+                                                        <td>
+                                                            31 Mar, 2021
+                                                        </td>
+                                                        <td>Jeffrey Waltz</td>
+                                                        <td>
+                                                            $105
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Unpaid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1237</a>
+                                                        </td>
+                                                        <td>Nike</td>
+                                                        <td>
+                                                            30 Mar, 2021
+                                                        </td>
+                                                        <td>Jewel Buckley</td>
+
+                                                        <td>
+                                                            $112
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            COD
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1238</a>
+                                                        </td>
+                                                        <td>Reebok (blue)</td>
+                                                        <td>
+                                                            28 Mar, 2021
+                                                        </td>
+                                                        <td>Jamison Clark</td>
+
+                                                        <td>
+                                                            $123
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-danger font-size-12">Refund
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Paypal
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1239</a>
+                                                        </td>
+                                                        <td>Reebok (red)</td>
+                                                        <td>
+                                                            27 Mar, 2021
+                                                        </td>
+                                                        <td>Eddy Torres</td>
+
+                                                        <td>
+                                                            $141
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Paypal
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1240</a>
+                                                        </td>
+                                                        <td>Wool Runners</td>
+                                                        <td>
+                                                            26 Mar, 2021
+                                                        </td>
+                                                        <td>Frank Dean</td>
+
+                                                        <td>
+                                                            $164
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Unpaid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1241</a>
+                                                        </td>
+                                                        <td>Jordan Eclipse</td>
+                                                        <td>
+                                                            25 Mar, 2021
+                                                        </td>
+                                                        <td>James Hamilton</td>
+
+                                                        <td>
+                                                            $154
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Visa
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1242</a>
+                                                        </td>
+                                                        <td>Nike(red)</td>
+                                                        <td>
+                                                            24 Mar, 2021
+                                                        </td>
+                                                        <td> Philip Smead</td>
+
+                                                        <td>
+                                                            $170
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-info font-size-12">Pending
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1243</a>
+                                                        </td>
+                                                        <td>Wool Runners</td>
+                                                        <td>
+                                                            23 Apr, 2021
+                                                        </td>
+                                                        <td>Robert Sitton</td>
+
+                                                        <td>
+                                                            $159
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Unpaid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1244</a>
+                                                        </td>
+                                                        <td>Jordan Eclipse</td>
+                                                        <td>
+                                                            20 Mar, 2021
+                                                        </td>
+                                                        <td>David Sanchez</td>
+
+                                                        <td>
+                                                            $129
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            COD
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1245</a>
+                                                        </td>
+                                                        <td>Air Jordan 1 TS</td>
+                                                        <td>
+                                                            18 Mar, 2021
+                                                        </td>
+                                                        <td> Alberto Jackson</td>
+
+                                                        <td>
+                                                            $200
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-info font-size-12">Pending
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1246</a>
+                                                        </td>
+                                                        <td>Adidas</td>
+                                                        <td>
+                                                            16 Mar, 2021
+                                                        </td>
+                                                        <td>Jan Armstead</td>
+
+                                                        <td>
+                                                            $180
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Mastercard
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                </tbody>
+                                                <!-- end tbody -->
+                                            </table>
+                                            <!-- end table -->
+                                        </div>
+                                        <!-- end table responsive -->
+                                    </div>
+                                    <!-- end tab-pane -->
+
+                                    <div class="tab-pane" id="active_order" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table
+                                                class="table table-centered datatable dt-responsive nowrap table-striped border"
+                                                style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead class="table-topbar text-uppercase">
+                                                    <tr class="">
+                                                        <th>Order ID</th>
+                                                        <th>Product</th>
+                                                        <th>Date</th>
+                                                        <th>Billing Name</th>
+                                                        <th>Total</th>
+                                                        <th>Payment Status</th>
+                                                        <th>Payment Method</th>
+                                                        <th colspan="2">Action</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <!-- end thead -->
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1234</a>
+                                                        </td>
+                                                        <td>Jordan Eclipse</td>
+                                                        <td>
+                                                            02 Apr, 2021
+                                                        </td>
+                                                        <td>Paul Jones</td>
+
+                                                        <td>
+                                                            $183
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-info font-size-12">Pending
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1242</a>
+                                                        </td>
+                                                        <td>Nike(red)</td>
+                                                        <td>
+                                                            24 Mar, 2021
+                                                        </td>
+                                                        <td> Philip Smead</td>
+
+                                                        <td>
+                                                            $170
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-info font-size-12">Pending
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+
+
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1245</a>
+                                                        </td>
+                                                        <td>Air Jordan 1 TS</td>
+                                                        <td>
+                                                            18 Mar, 2021
+                                                        </td>
+                                                        <td> Alberto Jackson</td>
+
+                                                        <td>
+                                                            $200
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-info font-size-12">Pending
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+
+                                                </tbody>
+                                                <!-- end tbody -->
+                                            </table>
+                                            <!-- end table -->
+                                        </div>
+                                        <!-- end table responsive -->
+                                    </div>
+                                    <!-- end tab-pane -->
+                                    <div class="tab-pane" id="paid_order" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table
+                                                class="table table-centered datatable dt-responsive nowrap table-striped border"
+                                                style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead class="table-topbar text-uppercase">
+                                                    <tr class="">
+                                                        <th>Order ID</th>
+                                                        <th>Product</th>
+                                                        <th>Date</th>
+                                                        <th>Billing Name</th>
+                                                        <th>Total</th>
+                                                        <th>Payment Status</th>
+                                                        <th>Payment Method</th>
+                                                        <th colspan="2">Action</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <!-- end thead -->
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1231</a>
+                                                        </td>
+                                                        <td>Wool Runners</td>
+                                                        <td>
+                                                            04 Apr, 2021
+                                                        </td>
+                                                        <td>Walter Brown</td>
+
+                                                        <td>
+                                                            $172
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+
+                                                        <td>
+                                                            Paypal
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1233</a>
+                                                        <td>Nike</td>
+                                                        </td>
+                                                        <td>
+                                                            03 Apr, 2021
+                                                        </td>
+                                                        <td>Donald Bailey</td>
+
+                                                        <td>
+                                                            $146
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Paypal
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1237</a>
+                                                        </td>
+                                                        <td>Nike</td>
+                                                        <td>
+                                                            30 Mar, 2021
+                                                        </td>
+                                                        <td>Jewel Buckley</td>
+
+                                                        <td>
+                                                            $112
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            COD
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1239</a>
+                                                        </td>
+                                                        <td>Reebok (red)</td>
+                                                        <td>
+                                                            27 Mar, 2021
+                                                        </td>
+                                                        <td>Eddy Torres</td>
+
+                                                        <td>
+                                                            $141
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Paypal
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1241</a>
+                                                        </td>
+                                                        <td>Jordan Eclipse</td>
+                                                        <td>
+                                                            25 Mar, 2021
+                                                        </td>
+                                                        <td>James Hamilton</td>
+
+                                                        <td>
+                                                            $154
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Visa
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1244</a>
+                                                        </td>
+                                                        <td>Jordan Eclipse</td>
+                                                        <td>
+                                                            20 Mar, 2021
+                                                        </td>
+                                                        <td>David Sanchez</td>
+
+                                                        <td>
+                                                            $129
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            COD
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1246</a>
+                                                        </td>
+                                                        <td>Adidas</td>
+                                                        <td>
+                                                            16 Mar, 2021
+                                                        </td>
+                                                        <td>Jan Armstead</td>
+
+                                                        <td>
+                                                            $180
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-success font-size-12">Paid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            Mastercard
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                </tbody>
+                                                <!-- end tbody -->
+                                            </table>
+                                            <!-- end table -->
+                                        </div>
+                                        <!-- end table responsive -->
+                                    </div>
+                                    <!-- end tab-pane -->
+
+                                    <div class="tab-pane" id="unpaid_order" role="tabpanel">
+                                        <div class="table-responsive">
+                                            <table
+                                                class="table table-centered datatable dt-responsive nowrap table-striped border"
+                                                style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead class="table-topbar text-uppercase">
+                                                    <tr class="">
+                                                        <th>Order ID</th>
+                                                        <th>Product</th>
+                                                        <th>Date</th>
+                                                        <th>Billing Name</th>
+                                                        <th>Total</th>
+                                                        <th>Payment Status</th>
+                                                        <th>Payment Method</th>
+                                                        <th colspan="2">Action</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <!-- end thead -->
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1232</a>
+                                                        </td>
+                                                        <td>Adidas (pink)</td>
+                                                        <td>
+                                                            03 Apr, 2021
+                                                        </td>
+                                                        <td>Jimmy Barker</td>
+
+                                                        <td>
+                                                            $165
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Unpaid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1236</a>
+                                                        </td>
+                                                        <td>Adidas (black)</td>
+                                                        <td>
+                                                            31 Mar, 2021
+                                                        </td>
+                                                        <td>Jeffrey Waltz</td>
+                                                        <td>
+                                                            $105
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Unpaid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1240</a>
+                                                        </td>
+                                                        <td>Wool Runners</td>
+                                                        <td>
+                                                            26 Mar, 2021
+                                                        </td>
+                                                        <td>Frank Dean</td>
+
+                                                        <td>
+                                                            $164
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Unpaid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+
+                                                    <tr>
+                                                        <td><a href="javascript: void(0);"
+                                                                class="text-reset fw-bold">#DD1243</a>
+                                                        </td>
+                                                        <td>Wool Runners</td>
+                                                        <td>
+                                                            23 Apr, 2021
+                                                        </td>
+                                                        <td>Robert Sitton</td>
+
+                                                        <td>
+                                                            $159
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Unpaid
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);" class="me-3 text-primary"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="mdi mdi-pencil font-size-18"></i></a>
+                                                            <a href="javascript:void(0);" class="text-danger"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete"><i
+                                                                    class="mdi mdi-trash-can font-size-18"></i></a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a class="text-muted dropdown-toggle font-size-16"
+                                                                    role="button" data-bs-toggle="dropdown"
+                                                                    aria-haspopup="true">
+                                                                    <i class="mdi mdi-dots-vertical text-muted"></i>
+                                                                </a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item" href="#">Action</a>
+                                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                                    <a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end tr -->
+                                                </tbody>
+                                                <!-- end tbody -->
+                                            </table>
+                                            <!-- end table -->
+                                        </div>
+                                        <!-- end table responsive -->
+                                    </div>
+                                </div>
+                                <!-- end tab-content -->
+                            </div>
+                            <!-- end cardbody -->
+                        </div>
+                        <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        @@include("partials/footer.html")
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+@@include("partials/right-sidebar.html")
+
+@@include("partials/vendor-scripts.html")
+
+<!-- Required datatable js -->
+<script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+
+<!-- Responsive examples -->
+<script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+<script src="assets/js/pages/ecommerce-datatables.init.js"></script>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

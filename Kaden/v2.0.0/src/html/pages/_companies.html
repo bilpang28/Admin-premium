@@ -1,0 +1,221 @@
+
+{% set companies = [{
+  name: "Moon Ltd", 
+  growth: "3%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$32,124",
+  status: "PAID"
+}, {
+  name: "Blue Space Ltd", 
+  growth: "5%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$13,593",
+  status: "PAID"
+}, {
+  name: "Visual Design", 
+  growth: "12%",
+  growth_icon: "arrow_upward",
+  growth_color: "danger",
+  amount: "$2,229",
+  status: "DUE"
+}, {
+  name: "Fox Technologies", 
+  growth: "54%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$41,139",
+  status: "PAID"
+}, {
+  name: "JMS Ltd", 
+  growth: "5%",
+  growth_icon: "arrow_upward",
+  growth_color: "danger",
+  amount: "$3,002",
+  status: "DUE"
+}, {
+  name: "Langston Corp", 
+  growth: "9%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$2,884",
+  status: "PAID"
+}, {
+  name: "Compare Solutions", 
+  growth: "3%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$15,844",
+  status: "PAID"
+}, {
+  name: "Hill Enterprises", 
+  growth: "12%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$9,772",
+  status: "PAID"
+}, {
+  name: "Monday Ltd", 
+  growth: "17%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$44,172",
+  status: "PAID"
+}, {
+  name: "Hexio Enterprise", 
+  growth: "31%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$21,984",
+  status: "PAID"
+},{
+  name: "Moon Ltd", 
+  growth: "3%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$32,124",
+  status: "PAID"
+}, {
+  name: "Blue Space Ltd", 
+  growth: "5%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$13,593",
+  status: "PAID"
+}, {
+  name: "Visual Design", 
+  growth: "12%",
+  growth_icon: "arrow_upward",
+  growth_color: "danger",
+  amount: "$2,229",
+  status: "DUE"
+}, {
+  name: "Fox Technologies", 
+  growth: "54%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$41,139",
+  status: "PAID"
+}, {
+  name: "JMS Ltd", 
+  growth: "5%",
+  growth_icon: "arrow_upward",
+  growth_color: "danger",
+  amount: "$3,002",
+  status: "DUE"
+}, {
+  name: "Langston Corp", 
+  growth: "9%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$2,884",
+  status: "PAID"
+}, {
+  name: "Compare Solutions", 
+  growth: "3%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$15,844",
+  status: "PAID"
+}, {
+  name: "Hill Enterprises", 
+  growth: "12%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$9,772",
+  status: "PAID"
+}, {
+  name: "Monday Ltd", 
+  growth: "17%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$44,172",
+  status: "PAID"
+}, {
+  name: "Hexio Enterprise", 
+  growth: "31%",
+  growth_icon: "arrow_upward",
+  growth_color: "success",
+  amount: "$21,984",
+  status: "PAID"
+}] 
+%}
+
+
+  <div class="flex">
+    <h1 class="my-8 flex-1">Companies</h1>
+    <div class="flex items-center">
+      <a href="#" class="text-gray-dark hover:text-primary"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg></a>
+      
+      <div class="relative leading-none">
+      <div>
+        
+          <a class="avatar w-12 h-12 ml-4">
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="Avatar" class="rounded-full p-2 border-gray-dark">
+          </a>
+
+        
+      </div>
+     <div class="origin-top-right absolute right-0 mt-2 w-48 rounded shadow-lg" style="display: none;">
+        <div class=" py-1 rounded bg-white shadow-xs">
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 font-semibold hover:no-underline
+                      hover:text-primary" >Your Profile</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 font-semibold hover:no-underline 
+                      hover:text-primary" >Settings</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 font-semibold hover:no-underline 
+                      hover:text-primary" >Sign out</a>
+        </div>
+      </div>
+    </div>
+
+      <label data-toggle="sidebar"  class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+    </div>
+  </div>
+
+
+
+    
+    <div class="card">
+      <div class="card-body grid grid-cols-5 gap-4">
+          
+            <div class="form-group">
+              <label for="filter_name">Name</label>
+              <input id="filter_name" type="text" class="form-control" placeholder="Search by name">
+            </div>
+            <div class="form-group">
+              <label for="filter_category">Industry</label><br>
+              <select id="filter_category" class="custom-select" style="width: 200px;">
+                <option value="all">Any</option>
+                <option value="all">Software</option>
+                <option value="all">Production of Goods</option>
+                <option value="all">Health</option>
+                <option value="all">Sports</option>
+              </select>
+            </div>
+         
+            <div class="form-group">
+              <label for="filter_stock">Has Sales</label>
+              <div class="custom-control custom-checkbox mt-sm-2">
+                <input type="checkbox" class="custom-control-input" id="filter_stock" checked="">
+                <label class="custom-control-label" for="filter_stock">Yes</label>
+              </div>
+            </div>
+          
+         
+            <div class="form-group" style="width: 200px;">
+              <label for="filter_date">Created Date</label>
+              <input id="filter_date" type="text" class="form-control" placeholder="Select date ..." value="13/03/2018 to 20/03/2018" data-toggle="flatpickr" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
+            </div>
+          
+        
+      
+        <button class="btn btn-white border-left border-top border-top-sm-0 rounded-top-0 rounded-top-sm rounded-left-sm-0"><i class="material-icons text-primary icon-20pt">refresh</i></button>
+      
+      </div>
+    </div>
+
+
+    <div class="card">
+      
+    </div>

@@ -1,0 +1,41 @@
+//
+// reboot.scss
+//
+
+
+// a
+a:focus {
+  outline: none;
+}
+
+// Forms
+label {
+  font-weight: $font-weight-medium;
+}
+
+// Buttons
+button:focus {
+  outline: none;
+}
+
+
+pre{
+  background-color: lighten($gray-100, 4%);
+  border: 1px solid lighten($gray-100, 8%);
+  padding: 7px;
+}
+
+// blockquote
+
+.blockquote{
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid $gray-200;
+  
+  &.blockquote-reverse{
+    border-left: 0;
+    border-right: 4px solid $gray-200;
+    text-align: right;
+  }
+}
+

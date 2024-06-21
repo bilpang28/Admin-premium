@@ -1,0 +1,60 @@
+// 
+// plugins-rtl.scss
+//
+
+
+.nice-select{
+    float: right;
+
+    .list{
+        right: 0;
+        left: auto;
+    }
+
+    &.right{
+        float: left;
+        .list{
+            left: 0;
+            right: auto;
+        }
+    }
+}
+
+// Select 2
+
+.select2-container {
+    .select2-selection--single {
+        .select2-selection__rendered {
+            padding-right: 12px;
+        }
+
+        .select2-selection__arrow {
+            left: 3px;
+            right: auto;
+        }
+    }
+
+    .select2-selection--multiple {
+        .select2-selection__choice {
+            float: right;
+            margin-left: 5px;
+            margin-right: 0;
+        }
+    }
+
+    .select2-search--inline {
+        float: right;
+    }
+}
+
+// datatable
+
+.dataTables_wrapper {
+    .dataTables_filter{
+        text-align: left !important;
+        input{
+            margin-left: 0px !important;
+            margin-right: 0.5em;
+        }
+    }
+}

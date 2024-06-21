@@ -1,0 +1,33 @@
+// 
+// Task.scss
+//
+
+.task-box{
+  border: 1px solid $gray-300;
+  box-shadow: none;
+  border-left: 3px solid $primary;
+
+  .team{
+    .team-member{
+      margin-right: 6px;
+    }
+  }
+}
+
+.gu-transit {
+    border: 1px dashed $gray-600 !important;
+    background-color: $gray-200 !important;
+}
+
+
+// avatar group
+.kanban-team {
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  .kanban-item{
+    margin-left: -20px;
+    border: 2px solid $card-bg;
+    border-radius: 50%;
+  }
+}

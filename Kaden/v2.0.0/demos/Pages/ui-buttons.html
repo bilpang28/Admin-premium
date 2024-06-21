@@ -1,0 +1,544 @@
+<!--
+Template Name: TailStack - Education Tailwind CSS System Template
+Author: frontted
+Website: http://www.frontted.com/
+Contact: contact@frontted.com
+Purchase: https://themeforest.net/item/tailstack-tailwind-admin-dashboard/28906006
+Renew Support: https://themeforest.net/item/tailstack-tailwind-admin-dashboard/28906006
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="frontted">
+    <title>Tailwind Custom Buttons Design - Tailwind HTML Admin Template</title>
+
+    <!-- BEGIN: CSS Assets -->
+    <link rel="stylesheet" href="../public/css/app.css" />
+    <link type="text/css" href="../public/css/vendor-materialicons.css" rel="stylesheet">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="../public/vendor/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133433427-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133433427-1');
+</script>
+
+</head>
+<body class="antialiased bg-gray-light layout-default">
+
+  
+  <!-- Header Layout -->
+  <div class="mdk-header-layout js-mdk-header-layout">
+
+    <!-- Header -->
+    
+      <div id="header" class="mdk-header js-mdk-header m-0" data-fixed>
+        <div class="mdk-header__content">
+          <!-- NAVBAR -->
+          
+            <header class="py-3 lg:py-0 bg-white shadow-md"   data-aos="fade-down" id="navbar">
+  <div class="lg:pl-4 px-8 flex flex-wrap items-center">
+    <div class="items-center">
+      <a href="index.html" class="flex items-center text-xl w-sidebar mr-4 hover:no-underline">
+          <span class="mr-1 -mt-1 text-primary">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 263 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Profile-Photo" transform="translate(-67.000000, -117.000000)">
+                        <path d="M154.333333,130.8 C109.355556,130.8 81.2444444,153.244444 70,198.133333 C86.8666667,175.688889 106.544444,167.272222 129.033333,172.883333 C141.864493,176.084784 151.035588,185.374914 161.186823,195.658833 C177.723652,212.411117 196.862946,231.8 238.666667,231.8 C283.644444,231.8 311.755556,209.355556 323,164.466667 C306.133333,186.911111 286.455556,195.327778 263.966667,189.716667 C251.135507,186.515216 241.964412,177.225086 231.813177,166.941167 C215.276348,150.188883 196.137054,130.8 154.333333,130.8 Z" id="Path" fill="#494949"></path>
+                        <path d="M151.333333,140.8 C106.355556,140.8 78.2444444,163.244444 67,208.133333 C83.8666667,185.688889 103.544444,177.272222 126.033333,182.883333 C138.864493,186.084784 148.035588,195.374914 158.186823,205.658833 C174.723652,222.411117 193.862946,241.8 235.666667,241.8 C280.644444,241.8 308.755556,219.355556 320,174.466667 C303.133333,196.911111 283.455556,205.327778 260.966667,199.716667 C248.135507,196.515216 238.964412,187.225086 228.813177,176.941167 C212.276348,160.188883 193.137054,140.8 151.333333,140.8 Z" id="Path-Copy-2" fill="#494949"></path>
+                        <path d="M159.666667,120.8 C116.111111,120.8 88.8888888,142.577778 78,186.133333 C94.3333333,164.355556 113.388889,156.188889 135.166667,161.633333 C147.592098,164.739691 156.473198,173.753876 166.303445,183.732333 C182.317371,199.987025 200.851469,218.8 241.333333,218.8 C284.888888,218.8 312.111112,197.022222 323,153.466667 C306.666667,175.244444 287.611112,183.411111 265.833333,177.966667 C253.407902,174.860309 244.526802,165.846124 234.696555,155.867667 C218.682629,139.612975 200.148531,120.8 159.666667,120.8 Z" id="Path-Copy" stroke="#494949" stroke-width="6" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </svg>
+          </span>
+          <span><strong>TailStack <small>v2</small></strong></span>
+      </a>
+    </div>
+
+    <div class="flex-1 flex justify-between">
+      <!-- This is an example component -->
+      <div class="relative text-gray-darker hidden lg:flex flex-grow">
+          <input
+            type="search" name="search" placeholder="Search">
+          <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+            <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+              viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+              width="512px" height="512px">
+              <path
+                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+            </svg>
+          </button>
+        </div>
+    </div>
+
+    <label data-toggle="sidebar"  class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+      
+        <ul class="lg:flex items-center justify-between text-md text-gray-900 font-semibold pt-4 lg:pt-0">
+          <li class="relative inline-block text-left">
+            <button class="flex items-center lg:p-4 py-3 px-0 block hover:text-blue-600 font-semibold" id="options-menue1" aria-haspopup="true" aria-expanded="true">
+              Features
+            </button>
+
+            <div class="hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg">
+              <div class="rounded-md bg-white shadow-xs">
+                <div class="py-1" role="menu" aria-orientation="vertical" >
+                  <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" >Learning</a>
+                  <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" >E-Commerce</a>
+                  <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" >Real-Estate</a>
+                  <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" >SAAS</a>
+                  <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" >Hosting</a>
+                  <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" >Marketing</a>
+                  <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" >Restaurant</a>
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          <li>
+            <a href="#" class="flex items-center lg:p-4 py-3 px-0 block hover:text-blue-600 font-semibold" id="options-menue" aria-haspopup="true" aria-expanded="true">
+              Pricing
+            </a>
+          </li>
+          <li>
+          <li>
+            <a href="#" class="flex items-center lg:p-4 py-3 px-0 block hover:text-blue-600 font-semibold" id="options-menue2" aria-haspopup="true" aria-expanded="true">
+              Sign in
+            </a>
+          </li>
+        
+          <li class="mr-4 text-muted">or</li>
+          <li>
+            <a class="btn btn-success" href="login.html">Login</a>
+          </li>
+        </ul>
+      
+      
+    </div>
+  </div>
+</header>
+          
+          <!-- // END HEADER -->
+        </div>
+      </div>
+    
+    <!-- // END Header -->
+
+    <!-- Header Layout Content -->
+    <div class="mdk-header-layout__content">
+
+      <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
+        <div class="mdk-drawer-layout__content page">
+
+      
+          <!-- PAGE CONTENT -->
+          
+<section class="max-w-6xl  mx-auto px-4">
+  <h1 class="my-8">Buttons</h1>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <!-- COL -->
+    <div class="card">
+      <div class="card-header card-header-large bg-white">
+          <h4 class="card-header__title">Default Buttons</h4>
+      </div>
+      <div class="card-body">
+          <p>Use button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+
+          <div class="button-list">
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-secondary">Secondary</button>
+              <button type="button" class="btn btn-success">Success</button>
+              <button type="button" class="btn btn-danger">Danger</button>
+              <button type="button" class="btn btn-warning">Warning</button>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-light">Light</button>
+              <button type="button" class="btn btn-dark">Dark</button>
+              <button type="button" class="btn btn-link">Link</button>
+          </div>
+      </div>
+    </div>
+    <!-- COL -->
+    <!-- COL -->
+    <div class="card">
+      <div class="card-header card-header-large bg-white">
+          <h4 class="card-header__title">Button Icons</h4>
+      </div>
+      <div class="card-body">
+          <p>Add icons to any button or even use Icon-only buttons.</p>
+          <div class="button-list">
+              <button type="button" class="btn btn-light">
+                  <i class="material-icons">favorite_border</i>
+              </button>
+              <button type="button" class="btn btn-danger">
+                  <i class="material-icons">close</i>
+              </button>
+              <button type="button" class="btn btn-dark">
+                  <i class="material-icons">music_note</i>
+              </button>
+              <button type="button" class="btn btn-primary">
+                  <i class="material-icons">star</i>
+              </button>
+              <button type="button" class="btn btn-success">
+                  <i class="material-icons">thumb_up</i>
+              </button>
+              <button type="button" class="btn btn-warning">
+                  <i class="material-icons">settings</i>
+              </button>
+              <br>
+              <button type="button" class="btn btn-light">
+                  <i class="material-icons mr-1">favorite</i> Favorite
+              </button>
+              <button type="button" class="btn btn-warning">
+                  <i class="material-icons mr-1">launch</i> Launch
+              </button>
+              <button type="button" class="btn btn-info">
+                  <i class="material-icons mr-1">cloud</i> Cloud Hosting
+              </button>
+          </div>
+      </div>
+    </div>
+    <!-- COL -->
+
+    <!-- COL -->
+    <div class="card">
+      <div class="card-header card-header-large bg-white">
+          <h4 class="card-header__title">Outlined Buttons</h4>
+      </div>
+      <div class="card-body">
+          <p>Use the <code>.btn-outline-*</code> classes to create bordered buttons.</p>
+          <div class="button-list">
+              <button type="button" class="btn btn-outline-primary">Primary</button>
+              <button type="button" class="btn btn-outline-secondary">Secondary</button>
+              <button type="button" class="btn btn-outline-success">Success</button>
+              <button type="button" class="btn btn-outline-danger">Danger</button>
+              <button type="button" class="btn btn-outline-warning">Warning</button>
+              <button type="button" class="btn btn-outline-info">Info</button>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+          </div>
+      </div>
+    </div>
+    <!-- COL -->
+
+    <div class="card">
+      <div class="card-header card-header-large bg-white">
+          <h4 class="card-header__title">Button Block</h4>
+      </div>
+      <div class="card-body">
+          <p>Create block level buttons, by adding add <code>.block</code>.</p>
+          <button type="button" class="btn btn-primary block mb-2">Block Button</button>
+          <button type="button" class="btn btn-success block mb-2">Block Button</button>
+          <button type="button" class="btn btn-sm btn-info block mb-2">Block Button</button>
+      </div>
+    </div>
+    <!-- COL -->
+
+    <!-- COL -->
+
+    <div class="card">
+      <div class="card-header card-header-large bg-white">
+          <h4 class="card-header__title">Rounded Buttons</h4>
+      </div>
+      <div class="card-body">
+          <p>Add <code>rounded</code> to buttons to get large rounded corners.</p>
+          <div class="button-list">
+              <button type="button" class="btn btn-primary btn-rounded">Primary</button>
+              <button type="button" class="btn btn-secondary btn-rounded">Secondary</button>
+              <button type="button" class="btn btn-success btn-rounded">Success</button>
+              <button type="button" class="btn btn-danger btn-rounded">Danger</button>
+              <button type="button" class="btn btn-warning btn-rounded">Warning</button>
+              <button type="button" class="btn btn-info btn-rounded">Info</button>
+              <button type="button" class="btn btn-light btn-rounded">Light</button>
+              <button type="button" class="btn btn-dark btn-rounded">Dark</button>
+              <button type="button" class="btn btn-link btn-rounded">Link</button>
+          </div>
+      </div>
+    </div>
+    <!-- COL -->
+    <div class="card">
+    <div class="card-header card-header-large bg-white">
+        <h4 class="card-header__title">Button Group</h4>
+    </div>
+    <div class="card-body">
+        <p>Create a group of buttons by wrapping with <code>.btn-group</code>.</p>
+        <div class="flex">
+        <div class="flex mr-2">
+            <button type="button" class="btn btn-light">Left</button>
+            <button type="button" class="btn btn-light">Middle</button>
+            <button type="button" class="btn btn-light">Right</button>
+        </div>
+        <br>
+        <div class="flex mr-2">
+            <button type="button" class="btn btn-light">1</button>
+            <button type="button" class="btn btn-light">2</button>
+            <button type="button" class="btn btn-light">3</button>
+            <button type="button" class="btn btn-light">4</button>
+        </div>
+        <div class="flex mr-2">
+            <button type="button" class="btn btn-light">5</button>
+            <button type="button" class="btn btn-light">6</button>
+            <button type="button" class="btn btn-light">7</button>
+        </div>
+        <div class="">
+            <button type="button" class="btn btn-light">8</button>
+        </div>
+        </div>
+        <br>
+        <div class="flex mb-2">
+            <button type="button" class="btn btn-light">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-light">3</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Dropdown <span class="caret"></span> </button>
+                <!-- <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- COL -->
+
+
+  </div>
+</section>
+
+
+          <!-- // END PAGE CONTENT -->
+
+
+        </div>
+        <!-- // END drawer-layout__content -->
+
+        <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="">
+  <div class="mdk-drawer__content">
+    <div class="sidebar sidebar-dark sidebar-left bg-gray-darker" data-perfect-scrollbar>
+      <div class="flex items-center sidebar-p-a border-b-2 bg-darker sidebar-account">
+        <a href="#" class="flex items-center text-underline-0 text-body">
+          <div class="avatar w-12 h-12 mr-2">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="Avatar" class="rounded-full p-1 bg-darker border-1">
+          </div>
+          <div class="leading-none">
+
+            <div class="mb-1"><strong>Adrian Demian</strong></div>
+          
+            <small class="text-muted text-xs">ACCOUNT MANAGER</small>
+          </div>
+          
+        </a>
+        
+      </div>
+      
+      <div class="sidebar-heading sidebar-m-t">DEMOS</div>
+      <ul class="sidebar-menu" id="demos_menu">
+        <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="admin.html">
+        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dvr</i>
+        <span class="sidebar-menu-text">Admin</span>
+      </a>
+    </li>
+      <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="admin-second.html">
+        <span class="sidebar-menu-icon sidebar-menu-icon--left">
+          <svg class="w-6 h-6 -mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>
+        </span>
+        <span class="sidebar-menu-text">Enterprise</span>
+        
+      </a>
+    </li>
+      <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="admin-third.html">
+        <span class="sidebar-menu-icon sidebar-menu-icon--left">
+        <svg class="w-6 h-6 -mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm9 4a1 1 0 10-2 0v6a1 1 0 102 0V7zm-3 2a1 1 0 10-2 0v4a1 1 0 102 0V9zm-3 3a1 1 0 10-2 0v1a1 1 0 102 0v-1z" clip-rule="evenodd"></path></svg>
+        </span>
+
+        <span class="sidebar-menu-text">Staff</span>
+
+        
+      </a>
+    </li>
+      <!-- <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="admin-mini.html">
+        <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dvr</i>
+        <span class="sidebar-menu-text">Mini</span>
+      </a>
+    </li> -->
+    <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="admin-fifth.html">
+        <span class="sidebar-menu-icon sidebar-menu-icon--left">
+          <i class="material-icons">business</i>
+        </span>
+        <span class="sidebar-menu-text">CRM</span>
+        
+      </a>
+    </li>
+    <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="admin-mini.html">
+        <span class="sidebar-menu-icon sidebar-menu-icon--left">
+          <i class="material-icons">home</i>
+        </span>
+        <span class="sidebar-menu-text">Mini</span>
+        
+      </a>
+    </li>
+    <li class="sidebar-menu-item">
+      <a class="sidebar-menu-button" href="index.html">
+        <span class="sidebar-menu-icon sidebar-menu-icon--left">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+        </span>
+        <span class="sidebar-menu-text">Fixed</span>
+      </a>
+    </li>  
+      </ul>
+
+      <div class="sidebar-heading">UI Components</div>
+      <div class="sidebar-block p-0">
+        <ul class="sidebar-menu" id="components_menu">
+  <li class="sidebar-menu-item active">
+    <a class="sidebar-menu-button" href="ui-buttons.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">mouse</i>
+      <span class="sidebar-menu-text">Buttons</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-alerts.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">notifications</i>
+      <span class="sidebar-menu-text">Alerts</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-avatars.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">person</i>
+      <span class="sidebar-menu-text">Avatars</span>
+      <span class="badge badge-primary rounded ml-auto">NEW</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-modals.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">aspect_ratio</i>
+      <span class="sidebar-menu-text">Modals</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-charts.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">pie_chart_outlined</i>
+      <span class="sidebar-menu-text">Charts</span>
+      <span class="badge badge-warning rounded ml-auto">PRO</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-icons.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">brush</i>
+      <span class="sidebar-menu-text">Icons</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-forms.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">text_format</i>
+      <span class="sidebar-menu-text">Forms</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-datetime.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">event_available</i>
+      <span class="sidebar-menu-text">Time &amp; Date</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-tables.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">dns</i>
+      <span class="sidebar-menu-text">Tables</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-tabs.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">tab</i>
+      <span class="sidebar-menu-text">Tabs</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-loaders.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">refresh</i>
+      <span class="sidebar-menu-text">Loaders</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-drag.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">control_point</i>
+      <span class="sidebar-menu-text">Drag &amp; Drop</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-pagination.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">last_page</i>
+      <span class="sidebar-menu-text">Pagination</span>
+    </a>
+  </li>
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="ui-vector-maps.html">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">location_on</i>
+      <span class="sidebar-menu-text">Vector Maps</span>
+    </a>
+  </li>
+</ul>  
+
+        <div class="sidebar-p-a sidebar-b-y">
+          <div class="flex items-center mb-2">
+            <div class="uppercase text-xs flex-1 text-body font-bold">Progress</div>
+            <div class="font-bold text-success">60%</div>
+          </div>
+          <div class="w-full bg-gray-light h-1">
+            <div class="bg-success text-xs leading-none h-1 text-center text-white" style="width: 45%"></div>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="sidebar-p-a">
+        <a href="https://themeforest.net/item/stack-admin-bootstrap-4-dashboard-template/22959011" class="btn btn-outline-primary btn-block">Purchase Stack &dollar;35</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+      </div>
+      <!-- // END drawer-layout -->
+
+    </div>
+    <!-- // END header-layout__content -->
+
+  </div>
+  <!-- // END header-layout -->
+
+  <script src="../public/vendor/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+
+  <script src="../public/vendor/dom-factory/dist/dom-factory.js"></script>
+  <script src="../public/vendor/material-design-kit/dist/material-design-kit.js"></script>
+
+  <script src="../public/vendor/jquery/dist/jquery.js"></script>
+
+
+  <script src="../public/js/app.js"></script>
+  <!-- // END FOOTER -->  
+  
+  
+  
+  
+</body>
+</html>

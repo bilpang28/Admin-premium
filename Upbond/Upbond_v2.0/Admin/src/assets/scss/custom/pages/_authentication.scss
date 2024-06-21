@@ -1,0 +1,96 @@
+// 
+// authentication.scss
+//
+
+.auth-body-bg {
+    // background-color: $card-bg;
+    background-image: url("../images/bg-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.authentication-bg {
+    background-image: url("../images/authentication-bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    .bg-overlay {
+        background-color: #292626;
+    }
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.authentication-page-content {
+    height: 100vh;
+    display: flex;
+}
+
+.auth-form-group-custom {
+    position: relative;
+
+    .form-control {
+        height: 60px;
+        padding-top: 28px;
+        padding-left: 60px;
+    }
+
+    label {
+        position: absolute;
+        top: 7px;
+        left: 60px;
+    }
+
+    .auti-custom-input-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 19px;
+        font-size: 24px;
+        color: $primary;
+    }
+}
+
+.auth-logo {
+    &.logo-light {
+        display: $display-none !important;
+    }
+
+    &.logo-dark {
+        display: $display-block !important;
+    }
+}
+
+
+.plan-line {
+    &::after {
+        content: "";
+        border: 1px solid $gray-300;
+        position: absolute;
+        width: 34%;
+        right: 64%;
+        top: 11px;
+    }
+
+    &:before {
+        content: "";
+        border: 1px solid $gray-300;
+        position: absolute;
+        width: 34%;
+        left: 64%;
+        top: 11px;
+    }
+}
+
+
+// authentication home icon
+.home-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    z-index: 9;
+}

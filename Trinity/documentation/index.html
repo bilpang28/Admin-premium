@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="IE-fix"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Trinity ~ Documentation</title>
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/prettify.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="favicon.ico">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	</head>
+	<body data-spy="scroll" data-target=".sidebar">
+		<div class="all">
+			<aside class="sidebar">
+				<div class="theme">
+					<a href="index.html" class="theme__logo">Trinity</a>
+					<div class="theme__name">Dashboard html template</div>
+				</div>
+				<ol class="main-menu nav" role="tablist">
+					<li class="active"><a data-scroll href="#section_01">File Structure</a></li>
+					<li><a data-scroll href="#section_02">HTML Structure</a></li>
+					<li><a data-scroll href="#section_03">CSS Structure</a></li>
+					<li><a data-scroll href="#section_04">Font Usage</a></li>
+					<li><a data-scroll href="#section_05">JavaScript</a></li>
+					<li><a data-scroll href="#section_06">Sources &amp; Credits</a></li>
+				</ol>
+				<div class="copyright">
+					© 2017, <span>design &ndash; <a href="https://themeforest.net/user/raulvodov">raulvodov</a></span><br><span>coding &ndash; <a target="_blank" href="http://themeforest.net/user/le-genda">le-genda</a></span><br>
+				</div>
+			</aside>
+			<div class="content">
+				<section class="section" id="section_00">
+					<div class="section__wrapper">
+						<div class="row">
+							<div class="col-lg-8">
+								<h1>Trinity</h1>
+								<h3>Dashboard html template</h3>
+								<ul class="info">
+									<li><span>created:</span> 23 feb 2017</li>
+									<li><span>latest update:</span> 23 feb 2017</li>
+									<li><span>themeforest:</span> <a href="https://themeforest.net/user/raulvodov">https://themeforest.net/user/raulvodov</a></li>
+									<li><span>email:</span> <a href="mailto: raulvodov@gmail.com">raulvodov@gmail.com</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-4"><img src="images/01_preview.jpg" class="thumbnail" alt=""></div>
+						</div>
+						<p>Thank you for your purchase! If you have any questions that you feel should have been in this document, please log in using the account used to purchase the file and email via my user page contact form here. Thanks!</p>
+						<p>For questions on basic HTML, JavaScript or CSS editing - please give your question a quick Google or visit W3Schools as theme issues get top priority. You will need some knowledge of HTML/CSS to edit this template.</p>
+						<p>Version 1.0</p>
+					</div>
+				</section>
+				<section class="section" id="section_01">
+					<div class="section__wrapper">
+						<h2>File Structure</h2>
+						<p>Within the download you will find the following file structure, logically grouping common assets. When you open the folder of the Trinity template, you will see something like this:</p>
+<pre class="prettyprint lang-html linenums">
+Trinity
++&ndash;&ndash; css/
+|   +&ndash;&ndash; fonts/
+|   +&ndash;&ndash; bootstrap.css
+|   +&ndash;&ndash; style.css
+|
++&ndash;&ndash; less/
+|   +&ndash;&ndash; mixins/
+|   +&ndash;&ndash; bootstrap.less
+|   +&ndash;&ndash; main.less
+|   +&ndash;&ndash; ... end other used less files
+|
++&ndash;&ndash; img/
+|   +&ndash;&ndash; ... all used images for design
+|
++&ndash;&ndash; images/
+|   +&ndash;&ndash; ... all used images for content
+|
++&ndash;&ndash; favicons/
+|   +&ndash;&ndash; ... all used images for favicons
+|
++&ndash;&ndash; js/
+|   +&ndash;&ndash; bootstrap.min.js
+|   +&ndash;&ndash; main.js
+|   +&ndash;&ndash; ... end other used javascript files
+|
+|&ndash;&ndash; index.html
+|&ndash;&ndash; help.html
+|&ndash;&ndash; login.html
+|&ndash;&ndash; registration.html
+|&ndash;&ndash; invitation.html
+|&ndash;&ndash; contact.html
+|&ndash;&ndash; dashboard.html
+|&ndash;&ndash; dashboard-forme.html
+|&ndash;&ndash; members.html
+|&ndash;&ndash; member-details.html
+|&ndash;&ndash; settings.html
+|&ndash;&ndash; task-create.html
+|&ndash;&ndash; task-full.html
+|&ndash;&ndash; notifications.html
+|&ndash;&ndash; search.html
+</pre>
+					</div>
+				</section>
+				<section class="section" id="section_02">
+					<div class="section__wrapper">
+						<h2>HTML Structure</h2>
+						<p>Trinity is built on it&#39;s own bootstrap grid system. The syntax is simple and it&#39;s effective cross browser. You can easily customize all parts of your site or build a new ones.</p>
+						<h4>1.1 Basic HTML template</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Trinity&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="description" content="Trinity"&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;!-- favicon--&gt;
+        &lt;link rel="shortcut icon" href="favicon/favicon.ico"&gt;
+        &lt;!-- ./ favicon--&gt;
+        &lt;link rel="stylesheet" href="css/bootstrap.css"&gt;
+        &lt;link rel="stylesheet" href="css/main.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="all"&gt;
+            &lt;!-- header--&gt;
+            &lt;div class="header"&gt;&lt;!-- Navigation --&gt;&lt;/div&gt;
+            &lt;!-- ./ header--&gt;
+            &lt;!-- search--&gt;
+            &lt;div id="search" class="search-form"&gt;...&lt;/div&gt;
+            &lt;!-- ./ search--&gt;
+            &lt;!-- content--&gt;
+            &lt;div class="page"&gt;
+                &lt;div class="page-nav"&gt;&lt;!-- Page navigation --&gt;&lt;/div&gt;
+                &lt;div class="page-header"&gt;&lt;!-- Page title --&gt;&lt;/div&gt;
+                &lt;div class="page-content"&gt;&lt;!-- Page content --&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- ./ content--&gt;
+            &lt;!-- footer--&gt;
+            &lt;div class="footer"&gt;...&lt;/div&gt;
+            &lt;!-- ./footer--&gt;
+            &lt;!-- ./ all content--&gt;
+        &lt;/div&gt;
+        &lt;!-- scripts--&gt;
+        &lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+        &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+        &lt;script src="js/slick.min.js"&gt;&lt;/script&gt;
+        &lt;script src="js/main.min.js"&gt;&lt;/script&gt;
+        &lt;!-- ./ scripts--&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+						<h4 id="html_structure_3_rich_set_of_widgets">1.3 Unique Page Templates</h4>
+						<p>Trinity include 15 Unique Page Templates:</p>
+						<ul>
+							<li>Contact</li>
+							<li>Dashboard</li>
+							<li>Dashboard for me</li>
+							<li>Help</li>
+							<li>Index</li>
+							<li>Invitation</li>
+							<li>Login</li>
+							<li>Member details</li>
+							<li>Members</li>
+							<li>Notifications</li>
+							<li>Registration</li>
+							<li>Search</li>
+							<li>Settings</li>
+							<li>Task create</li>
+							<li>Task full</li>
+						</ul>
+					</div>
+				</section>
+				<section class="section" id="section_03">
+					<div class="section__wrapper">
+						<h2>CSS Structure</h2>
+						<p>CSS files used in this template:</p>
+						<ol>
+							<li><strong>bootstrap.css</strong> &mdash; contains all styles proper framework bootstrap, is the skeleton of the entire template;</li>
+							<li><strong>main.css</strong> &mdash; main css file, contains all the styles of this template to create individual;</li>
+						</ol>
+					</div>
+				</section>
+				<section class="section" id="section_04">
+					<div class="section__wrapper">
+						<h2>Font Usage</h2>
+						<p>Fonts used in Trinity HTML template:</p>
+						<ul>
+							<li><strong>Roboto</strong> &mdash;  for all text</li>
+						</ul>
+						<p>Check it on the <a href="http://www.google.com/fonts">Google Fonts</a>.</p>
+						<p>These fonts are embedded into style.css with this code:</p>
+						<pre class="prettyprint lang-css linenums">@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');</pre>
+					</div>
+				</section>
+				<section class="section" id="section_05">
+					<div class="section__wrapper">
+						<h2>JavaScript</h2>
+						<p><strong>You can see some help info, for Javascript plugins, which are included in our template:</strong></p>
+						<ol>
+							<li><strong>jQuery</strong> - is a Javascript library that greatly reduces the amount of code that you must write.<br>For more information, please visit <a href="http://www.jquery.com">http://www.jquery.com</a></li>
+							<li><strong>slick</strong> - the last carousel you'll ever need... For more information, please visit <a href="http://kenwheeler.github.io/slick/">http://kenwheeler.github.io/slick/</a></li>
+							<li><strong>main</strong> - custom js file for initialize scripts</li>
+						</ol>
+					</div>
+				</section>
+				<section class="section" id="section_06">
+					<div class="section__wrapper">
+						<h2>Sources &amp; Credits</h2>
+						<ul>
+							<li>Thanks for <a href="http://kenwheeler.github.io/slick/">Slick</a> (awesome carousel)</li>
+							<li>Thanks for <a href="http://google.com">Google</a> (images for demo and font)</li>
+						</ul>
+						<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist. If you have a more general question relating to the templates on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+						<p>&nbsp;</p>
+						<p>Regards, <a href="http://themeforest.net/user/le-genda">le-genda</a> and <a href="https://themeforest.net/user/raulvodov">raulvodov</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+		<!-- scripts -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+		<script src="js/jquery.sticky-kit.min.js"></script>
+		<script src="js/smooth-scroll.js"></script>
+		<script src="js/prettify.js"></script>
+		<script src="js/main.js"></script>
+		<!-- ./ scripts -->
+	</body>
+</html>

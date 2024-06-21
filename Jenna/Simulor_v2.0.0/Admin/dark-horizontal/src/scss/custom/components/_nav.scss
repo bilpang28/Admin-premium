@@ -1,0 +1,35 @@
+// 
+// nav.scss
+//
+
+.nav-tabs,.nav-pills {
+    > li {
+        > a {
+            color: $gray-700;
+            font-weight: $font-weight-medium;
+        }
+    }
+}
+
+.nav-pills {
+    > a {
+        color: $gray-700;
+        font-weight: $font-weight-medium;   
+    }
+}
+
+
+//Navtab custom
+.navtab-bg {
+    li {
+        >a {
+            background-color: lighten($light, 4%);
+            margin: 0 5px;
+        }
+    }
+}
+
+
+.tab-content {
+    padding: 20px 0 0 0;
+}  

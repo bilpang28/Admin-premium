@@ -1,0 +1,39 @@
+// 
+// pages-rtl.scss
+//
+
+
+// Timelime
+
+.timeline{
+    &:before{
+        right: 70px;
+        left: auto;
+    }
+
+    .timeline-item{
+        padding-right: 70px;
+        padding-left: 0px;
+        .time-show{
+            margin-right: -70px;
+            margin-left: 0px;
+        }
+        .timeline-desk {
+            .timeline-box {
+                padding: 15px 40px 15px 30px;
+            }
+        }
+        .timeline-icon{
+            right: -10px;
+        }
+    }
+}
+
+
+// authentication
+
+.home-btn {
+    position: absolute;
+    left: 25px;
+    right: auto;
+}

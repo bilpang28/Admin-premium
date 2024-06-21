@@ -1,0 +1,85 @@
+// 
+// _progress.scss
+// 
+
+// Progress height small
+.progress-sm {
+  height: 5px;
+}
+
+
+// Progress height medium
+.progress-md {
+  height: 8px;
+}
+
+
+// Progress height large
+.progress-lg {
+  height: 12px;
+}
+
+// Progress height Extra large
+.progress-xl {
+  height: 16px;
+}
+
+.animated-progess{
+  position: relative;
+  .progress-bar {
+    position: relative;
+    border-radius: 6px;
+    animation: animate-positive 2s;
+  }
+}
+
+@keyframes animate-positive {
+  0% {
+      width: 0;
+  }
+}
+
+
+// Custom Progress
+.custom-progess{
+  position: relative;
+  .progress-icon{
+      position: absolute;
+      top: -12px;
+      .avatar-title{
+        background: $card-bg;
+      }
+  }
+}
+
+//Vertical
+.progressbar-vertical-top{
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 32px;
+  min-height: 310px;
+  position: relative;
+ }
+ .progressbar-vertical{
+  display: inline-block;
+  transform: rotate(180deg);
+  margin-right: 34px;
+  min-height: 310px;
+ }
+
+ .progressbar-vertical-graph{
+  display: inline-block;
+  transform: rotate(180deg);
+  margin-right: 10px;
+  min-height: 90px;
+  margin-bottom: 0;
+ }
+
+    @media (max-width: 1200px) {
+       .progressbar-vertical {
+        margin-right: 16px; 
+    } 
+    .progressbar-vertical-top{
+      margin-right: 16px;
+    }
+  }

@@ -1,0 +1,28 @@
+
+
+//
+// Nice Select.scss
+//
+
+.nice-select {
+    background-color: lighten($light, 3%);
+    border-color: lighten($light, 4%);
+    
+    &:hover, &:active, &.open, &:focus{
+        border-color: lighten($light, 5%);
+    }
+
+    .option{
+        &.selected{
+            font-weight: $font-weight-medium;
+        }
+
+        &:hover, &.focus, &.selected.focus{
+            background: lighten($light, 4%);
+        }
+    }
+
+    .list{
+        background: lighten($light, 3%);
+    }
+}

@@ -1,0 +1,13 @@
+
+
+//
+// Nice Select.scss
+//
+
+.nice-select {
+    .option{
+        &.selected{
+            font-weight: $font-weight-medium;
+        }
+    }
+}

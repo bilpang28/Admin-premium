@@ -1,0 +1,121 @@
+Version 6.2 - 13th August 2021
+
+- UPDATE: CSS variables added for primary color
+- UPDATE: CSS variables added for secondary color
+- UPDATE: CSS variables added for tertiary color
+- UPDATE: Removed empty css rules
+- UPDATE: Fixed CSS cross browser compatibility issues
+- UPDATE: Removed ignored CSS properties
+
+
+Version 6.1 - 22nd January 2020
+
+- UPDATE: Bootstrap version updated to 4.4.1
+- UPDATE: Font Awesome version updated to 4.7.0
+- UPDATE: jQuery version updated to 3.4.1
+
+
+Version 5.3 - 09th June 2019
+
+- UPDATE: Bootstrap version updated to 4.3.1
+
+Version 5.2 - 10th June 2018
+
+- UPDATE: Documentation merged for Bootstrap 3 and Bootstrap 4 info. 
+- UPDATE: Bootstrap version updated to 4.1.1
+- 
+
+Version 5.1 - 12th January 2018
+- Bootstrap 4 version: B4-1.0 Initial Release
+
+Version 4.4 - 06th September 2017
+UPDATE: improved style of chat api on wrapping
+UPDATE: navbar inverse style improved
+UPDATE: blogs improved css
+UPDATE: user profile page improved css
+UPDATE: https google fonts from http
+
+Version 4.3 - 16th May 2017
+UPDATE: Improved Menu Style
+UPDATE: Improved Bootstrap Table CSS style
+ADDED: A Inline Table Edit App 
+ADDED: xEditable plugin for Inline Edit App in 2 different formats.
+ADDED: xEditable plugin packaged added.
+
+Version 4.2 - 25th October 2016
+	UPDATE: Bootstrap updated to 3.3.7
+
+Version 4.1 - 26th Jan 2016
+	ADDED: UI Elements section to General Admin
+
+Version 4.0 - 21st Dec 2015
+
+	ADDED: Hospital Admin APP
+	ADDED: Music Admin APP
+	ADDED: University Admin APP
+	ADDED: Freelancing Admin APP
+	ADDED: CRM Admin APP
+	ADDED: Social Media Admin APP
+	ADDED: Blog Admin APP
+	ADDED: Ecommerce Admin APP
+	UPDATE: Improved Login Page on Small Devices
+	UPDATE: Improved CSS
+	UPDATE: Improved Responsive behaviour
+
+Version 3.1 - 7th Dec 2015
+
+	UPDATE: Improved Main Stylesheet
+	UPDATE: Added Mobile Based New Menu
+	UPDATE: Chat API can be accessed on Mobiles now
+	UPDATE: Top Bar message and notification icons style changed for better mobile experience
+	UPDATE: Main Content area is now full width on small screens
+	UPDATE: Side Menu overlaps content when opened for better mobile experience
+	UPDATE: Chat API overlaps main content area when open on mobile for better user experience
+
+Version 3.0 - 23rd Nov 2015
+	UPDATE: Autonumeric jQuery plugin updated from v1.9.30 to v1.9.42
+	UPDATE: Autosize jQuery plugin updated from v1.18.9 to v1.18.18
+	UPDATE: Bootstrap framework updated from v3.3.4 to v3.3.5
+	UPDATE: Chart.js jQuery plugin updated from v1.0.1 to v1.0.2
+	UPDATE: CKEditor plugin updated from v4.4.6 to v4.5.5 (standard version)
+	UPDATE: Bootstrap Colorpicker jQuery plugin updated to v2.3
+	UPDATE: CountTo jQuery plugin updated from v1.0.0 to v1.2.0
+	UPDATE: Datatables plugin updated from v1.10.4 to v1.10.10
+	UPDATE: FullCalendar jQuery plugin updated from v2.2.6 to v2.4.0
+	UPDATE: Date Range Picker jQuery plugin updated from v1.3.17 to v2.1.13
+	UPDATE: Bootstrap date time picker jQuery plugin updated to v2.3.5
+	UPDATE: Dropzone jQuery plugin updated to v4.2.0
+	UPDATE: jQuery Image Cropper jQuery plugin updated to v2.0.1
+	UPDATE: Input Mask jQuery plugin updated from v3.1.57 to v3.2.5-1
+	UPDATE: jQuery UI updated from v1.11.2 to v1.11.4
+	UPDATE: jQuery Validate plugin updated from v1.13.1 to v1.14.0
+	UPDATE: jQuery JStree plugin updated from v3.0.9 to v3.2.1
+	UPDATE: Messenger jQuery plugin updated from v1.4.1 to v1.4.2
+	UPDATE: Multi Select jQuery plugin updated from v0.9.8 to v0.9.12
+	UPDATE: Bootstrap Time Picker plugin updated from v0.2.5 to v0.2.7
+	UPDATE: ViewPort Checker plugin updated from v1.7.4 to v1.8.2
+
+2.1 - 26th June 2015
+	UPDATE: PrettyPhoto plugin update to latest version (for security reasons)
+
+2.0 - 24th June 2015
+
+	FIXED: Chat API height issue for different screen layouts
+	FIXED: Main Navigation Menu height issue for different screen layouts
+	UPDATE: Upgraded Bootstrap from 3.3.1 to 3.3.4
+	FIXED: Solved Top bar on page load overlapping issue on small screen devices
+	UPDATE: Mobile optimized dashboard page for better view
+	UPDATE: Widgets updated for better responsiveness
+	UPDATE: UI icons layout updated
+	UPDATE: Pricing Tables updated for small screens
+	UPDATE: Mail API updated for better responsiveness
+	ADDED: Added redraw feature to Morris graphs for window resize and other screen responsiveness events
+
+1.1 - 22nd April 2015
+
+	FIXED: Responsiveness of top bar in small screens devices like phones
+	FIXED: Main menu drop downs on small screens
+	UPDATE: Browser console log related messages for expanding and collapsing menu commented
+	FIXED: Timeline page overlaping of collapsed menu
+
+1.0 - Initial Release

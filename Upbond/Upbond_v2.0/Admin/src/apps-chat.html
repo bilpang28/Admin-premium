@@ -1,0 +1,842 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Chat"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    @@include("partials/menu.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                @@include("partials/page-title.html", {"pagetitle": "Upbond", "title": "Chat"})
+
+                <div class="d-lg-flex mb-4">
+                    <div class="chat-leftsidebar">
+                        <div class="p-3 border-bottom">
+                            <div class="d-flex">
+                                <div class="align-self-center me-3">
+                                    <img src="assets/images/users/avatar-2.jpg" class="avatar-xs rounded-circle"
+                                        alt="avatar-2">
+                                </div>
+                                <div class="flex-1">
+                                    <h5 class="font-size-15 mt-0 mb-1">Ricky Clark</h5>
+                                    <p class="text-muted mb-0"><i
+                                            class="mdi mdi-circle text-success align-middle me-1"></i> Active</p>
+                                </div>
+
+                                <div>
+                                    <div class="dropdown chat-noti-dropdown">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <i class="mdi mdi-dots-horizontal font-size-20"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <!-- end dropdown -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+                        <div class="card-body border-bottom py-2">
+                            <div class="search-box chat-search-box">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <i class="ri-search-line search-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end cardbody -->
+
+                        <div class="chat-leftsidebar-nav">
+                            <ul class="nav nav-tabs nav-tabs-custom nav-justified" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#chat" role="tab">
+                                        <span class=""><i class="ri-message-2-line font-size-20"></i></span>
+                                    </a>
+                                </li>
+                                <!-- end li -->
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#group" role="tab">
+                                        <span class=""> <i class="ri-group-line font-size-20"></i></span>
+                                    </a>
+                                </li>
+                                <!-- end li -->
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#contact" role="tab">
+                                        <span class=""><i class="ri-contacts-book-2-line font-size-20"></i></span>
+
+                                    </a>
+                                </li>
+                                <!-- end li -->
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#setting" role="tab">
+                                        <span class=""><i class="ri-settings-3-line font-size-20"></i></span>
+                                    </a>
+                                </li>
+                                <!-- end li -->
+                            </ul>
+                            <!-- end ul -->
+                        </div>
+
+                        <div class="tab-content py-4">
+                            <div class="tab-pane show active" id="chat">
+                                <div>
+                                    <h5 class="font-size-14 px-3 mb-3">Recent</h5>
+                                    <ul class="list-unstyled chat-list" data-simplebar style="max-height: 480px;">
+                                        <li class="active">
+                                            <a href="#">
+                                                <div class="d-flex">
+                                                    <div class="user-img online align-self-center me-3">
+                                                        <img src="assets/images/users/avatar-3.jpg"
+                                                            class="rounded-circle avatar-xs" alt="avatar-2">
+                                                        <span class="user-status"></span>
+                                                    </div>
+
+                                                    <div class="flex-1 overflow-hidden">
+                                                        <h5 class="text-truncate font-size-14 mb-1">Soha Vickery</h5>
+                                                        <p class="text-truncate mb-0">Hey! there I'm available</p>
+                                                    </div>
+                                                    <div class="font-size-11">04 min</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end li -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="d-flex">
+                                                    <div class="user-img away align-self-center me-3">
+                                                        <img src="assets/images/users/avatar-2.jpg"
+                                                            class="rounded-circle avatar-xs" alt="avatar-3">
+                                                        <span class="user-status"></span>
+                                                    </div>
+                                                    <div class="flex-1 overflow-hidden">
+                                                        <h5 class="text-truncate font-size-14 mb-1">Robert Winter</h5>
+                                                        <p class="text-truncate mb-0">I've finished it! See you so</p>
+                                                    </div>
+                                                    <div class="font-size-11">09 min</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end li -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="d-flex">
+                                                    <div class="user-img online me-3">
+                                                        <div class="avatar-xs align-self-center">
+                                                            <span
+                                                                class="avatar-title rounded-circle bg-light text-body">
+                                                                D
+                                                            </span>
+                                                        </div>
+                                                        <span class="user-status mb-2"></span>
+                                                    </div>
+                                                    <div class="flex-1 overflow-hidden">
+                                                        <h5 class="text-truncate font-size-14 mb-1">Daniela Dewitt</h5>
+                                                        <p class="text-truncate mb-0">This theme is awesome!</p>
+                                                    </div>
+                                                    <div class="font-size-11">21 min</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end li -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="d-flex">
+                                                    <div class="user-img align-self-center me-3">
+                                                        <img src="assets/images/users/avatar-4.jpg"
+                                                            class="rounded-circle avatar-xs" alt="avatar-4">
+                                                        <span class="user-status"></span>
+                                                    </div>
+                                                    <div class="flex-1 overflow-hidden">
+                                                        <h5 class="text-truncate font-size-14 mb-1">Zara Steele</h5>
+                                                        <p class="text-truncate mb-0">Nice to meet you</p>
+                                                    </div>
+                                                    <div class="font-size-11">1 hr</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end li -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="d-flex">
+                                                    <div class="user-img away me-3">
+                                                        <div class="avatar-xs align-self-center">
+                                                            <span
+                                                                class="avatar-title rounded-circle bg-light text-body">
+                                                                M
+                                                            </span>
+                                                        </div>
+                                                        <span class="user-status mb-2"></span>
+                                                    </div>
+
+                                                    <div class="flex-1 overflow-hidden">
+                                                        <h5 class="text-truncate font-size-14 mb-1">Maxx Givens</h5>
+                                                        <p class="text-truncate mb-0">Hey! there I'm available</p>
+                                                    </div>
+                                                    <div class="font-size-11">3 hrs</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end li -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="d-flex">
+                                                    <div class="user-img online align-self-center me-3">
+                                                        <img src="assets/images/users/avatar-6.jpg"
+                                                            class="rounded-circle avatar-xs" alt="avatar-6">
+                                                        <span class="user-status"></span>
+                                                    </div>
+                                                    <div class="flex-1 overflow-hidden">
+                                                        <h5 class="text-truncate font-size-14 mb-1">Stephen Hadley</h5>
+                                                        <p class="text-truncate mb-0">I've finished it! See you so</p>
+                                                    </div>
+                                                    <div class="font-size-11">5hrs</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end li -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="d-flex">
+                                                    <div class="user-img online me-3">
+                                                        <div class="avatar-xs align-self-center">
+                                                            <span
+                                                                class="avatar-title rounded-circle bg-light text-body">
+                                                                A
+                                                            </span>
+                                                        </div>
+                                                        <span class="user-status mb-2"></span>
+                                                    </div>
+
+                                                    <div class="flex-1 overflow-hidden">
+                                                        <h5 class="text-truncate font-size-14 mb-1">Alya Penley</h5>
+                                                        <p class="text-truncate mb-0">This theme is awesome!</p>
+                                                    </div>
+                                                    <div class="font-size-11">24/03</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end li -->
+                                    </ul>
+                                    <!-- end ul -->
+                                </div>
+                            </div>
+                            <!-- end tab-pane -->
+
+                            <div class="tab-pane" id="group">
+                                <h5 class="font-size-14 px-3 mb-3">Group</h5>
+                                <ul class="list-unstyled chat-list" data-simplebar style="max-height: 480px;">
+                                    <li>
+                                        <a href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-light text-body">
+                                                        G
+                                                    </span>
+                                                </div>
+
+                                                <div class="flex-1">
+                                                    <h5 class="font-size-14 mb-0">General</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <a href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-light text-body">
+                                                        R
+                                                    </span>
+                                                </div>
+
+                                                <div class="flex-1">
+                                                    <h5 class="font-size-14 mb-0">Reporting</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <a href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-light text-body">
+                                                        M
+                                                    </span>
+                                                </div>
+
+                                                <div class="flex-1">
+                                                    <h5 class="font-size-14 mb-0">Meeting</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <a href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-light text-body">
+                                                        A
+                                                    </span>
+                                                </div>
+
+                                                <div class="flex-1">
+                                                    <h5 class="font-size-14 mb-0">Project A</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <a href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-light text-body">
+                                                        B
+                                                    </span>
+                                                </div>
+
+                                                <div class="flex-1">
+                                                    <h5 class="font-size-14 mb-0">Project B</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <a href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-light text-body">
+                                                        E
+                                                    </span>
+                                                </div>
+
+                                                <div class="flex-1">
+                                                    <h5 class="font-size-14 mb-0">Employe</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <a href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-light text-body">
+                                                        T
+                                                    </span>
+                                                </div>
+
+                                                <div class="flex-1">
+                                                    <h5 class="font-size-14 mb-0">Team Work</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <a href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-light text-body">
+                                                        B
+                                                    </span>
+                                                </div>
+
+                                                <div class="flex-1">
+                                                    <h5 class="font-size-14 mb-0">Bussiness</h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end li -->
+                                </ul>
+                                <!-- end ul -->
+                            </div>
+                            <!-- end tabpane -->
+                            <div class="tab-pane" id="contact">
+                                <h5 class="font-size-14 px-3 mb-3">Contact</h5>
+
+                                <div data-simplebar style="max-height: 480px;">
+                                    <div>
+                                        <div class="p-3">
+                                            A
+                                        </div>
+
+                                        <ul class="list-unstyled chat-list">
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="font-size-14 mb-0">Adam Miller</h5>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="font-size-14 mb-0">Alfonso Fisher</h5>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                        </ul>
+                                        <!-- end ul -->
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <div class="p-3">
+                                            B
+                                        </div>
+
+                                        <ul class="list-unstyled chat-list">
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="font-size-14 mb-0">Bonnie Harney</h5>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                        </ul>
+                                        <!-- end ul -->
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <div class="p-3">
+                                            C
+                                        </div>
+
+                                        <ul class="list-unstyled chat-list">
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="font-size-14 mb-0">Charles Brown</h5>
+                                                </a>
+                                                <a href="#">
+                                                    <h5 class="font-size-14 mb-0">Carmella Jones</h5>
+                                                </a>
+                                                <a href="#">
+                                                    <h5 class="font-size-14 mb-0">Carrie Williams</h5>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                        </ul>
+                                        <!-- end ul -->
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <div class="p-3">
+                                            D
+                                        </div>
+
+                                        <ul class="list-unstyled chat-list">
+                                            <li>
+                                                <a href="#">
+                                                    <h5 class="font-size-14 mb-0">Dolores Minter</h5>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                        </ul>
+                                        <!-- end ul -->
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end tabpane -->
+
+                            <div class="tab-pane" id="setting">
+                                <h5 class="font-size-14 px-3 mb-3">Settings</h5>
+
+                                <div data-simplebar style="max-height: 480px;">
+                                    <div class="">
+                                        <div class="">
+                                            <div class="text-center">
+                                                <img src="assets/images/users/avatar-7.jpg"
+                                                    class="avatar-xl rounded-circle" alt="Error">
+
+                                                <h5 class="mt-4">Malvika jazz</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <ul class="list-unstyled chat-list" data-simplebar style="max-height: 480px;">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar-xs me-3">
+                                                            <span class="avatar-title rounded bg-light text-body">
+                                                                <i class="mdi mdi-account text-info font-size-18"></i>
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="flex-1">
+                                                            <h5 class="font-size-14 mb-0">Edit Profile</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                            <li>
+                                                <a href="#">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar-xs me-3">
+                                                            <span class="avatar-title rounded bg-light text-body">
+                                                                <i
+                                                                    class="mdi mdi-map-marker text-success font-size-18"></i>
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="flex-1">
+                                                            <h5 class="font-size-14 mb-0">Location</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                            <li>
+                                                <a href="#">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar-xs me-3 ">
+                                                            <span class="avatar-title rounded bg-light text-body">
+                                                                <i class="mdi mdi-bell text-warning font-size-18"></i>
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="flex-1">
+                                                            <h5 class="font-size-14 mb-0">Notification</h5>
+                                                        </div>
+                                                        <div class="">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label"
+                                                                    for="flexSwitchCheckChecked"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                            <li>
+                                                <a href="#">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar-xs me-3">
+                                                            <span class="avatar-title rounded bg-light text-body">
+                                                                <i class="mdi mdi-lock text-primary font-size-18"></i>
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="flex-1">
+                                                            <h5 class="font-size-14 mb-0">Privacy</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                            <li class="border-bottom">
+                                                <a href="#">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar-xs me-3">
+                                                            <span class="avatar-title rounded bg-light text-body">
+                                                                <i
+                                                                    class="mdi mdi-alert-circle-outline text-dark font-size-18"></i>
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="flex-1">
+                                                            <h5 class="font-size-14 mb-0">Help</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end li -->
+                                    </div>
+                                </div>
+                                <!-- end simple bar -->
+                            </div>
+                            <!-- end tabpane -->
+                        </div>
+                    </div>
+
+                    <div class="w-100 user-chat mt-4 mt-sm-0">
+                        <div class="p-3 px-lg-4 user-chat-border">
+                            <div class="row">
+                                <div class="col-md-4 col-6">
+                                    <div class="d-flex">
+                                        <div class="align-self-center me-3">
+                                            <img src="assets/images/users/avatar-1.jpg" class="avatar-xs rounded-circle"
+                                                alt="avatar-2">
+                                        </div>
+                                        <div class="flex-1">
+                                            <h5 class="font-size-15 mb-1 text-truncate">Mahira Vickery</h5>
+                                            <p class="text-muted text-truncate mb-0"><i
+                                                    class="mdi mdi-circle text-success align-middle me-1"></i>
+                                                Active
+                                                now
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-6">
+                                    <ul class="list-inline user-chat-nav text-end mb-0">
+
+                                        <li class="list-inline-item m-0 d-inline-block">
+                                            <div class="dropdown">
+                                                <button class="btn nav-btn dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="mdi mdi-magnify"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-md">
+                                                    <form class="p-2">
+                                                        <div class="search-box">
+                                                            <div class="position-relative">
+                                                                <input type="text" class="form-control rounded"
+                                                                    placeholder="Search...">
+                                                                <i class="mdi mdi-magnify search-icon"></i>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <!-- end form -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- end li -->
+
+                                        <li class="list-inline-item m-0 d-inline-block">
+                                            <div class="dropdown">
+                                                <button class="btn nav-btn dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="mdi mdi-star-outline"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a class="dropdown-item" href="#">Star</a>
+                                                    <a class="dropdown-item" href="#">Unstar</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- end li -->
+                                        <li class="list-inline-item  m-0 d-inline-block">
+                                            <div class="dropdown">
+                                                <button class="btn nav-btn dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="mdi mdi-dots-horizontal"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- end li -->
+                                    </ul>
+                                    <!-- end ul -->
+                                </div>
+                                <!-- end col -->
+                            </div>
+                            <!-- end row -->
+                        </div>
+
+                        <div class="px-lg-2">
+                            <div class="chat-conversation p-3">
+                                <ul class="list-unstyled mb-0 pe-3" data-simplebar style="max-height: 560px;">
+                                    <li>
+                                        <div class="conversation-list">
+                                            <div class="chat-avatar">
+                                                <img src="assets/images/users/avatar-1.jpg" alt="avatar-2">
+                                            </div>
+                                            <div class="ctext-wrap">
+                                                <div class="conversation-name">Mahira Vickery</div>
+                                                <div class="ctext-wrap-content">
+                                                    <p class="mb-0">
+                                                        Hey! I am available
+                                                    </p>
+                                                </div>
+                                                <p class="chat-time mb-0"><i
+                                                        class="mdi mdi-clock-outline align-middle me-1"></i> 12:09
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <!-- end li -->
+                                    <li class="right">
+                                        <div class="conversation-list">
+                                            <div class="ctext-wrap">
+                                                <div class="conversation-name">Ricky Clark</div>
+                                                <div class="ctext-wrap-content">
+                                                    <p class="mb-0">
+                                                        Hi, How are you? What about our next meeting?
+                                                    </p>
+                                                </div>
+
+                                                <p class="chat-time mb-0"><i
+                                                        class="bx bx-time-five align-middle me-1"></i> 10:02</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <div class="chat-day-title">
+                                            <span class="title">Today</span>
+                                        </div>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <div class="conversation-list">
+                                            <div class="chat-avatar">
+                                                <img src="assets/images/users/avatar-1.jpg" alt="avatar-2">
+                                            </div>
+                                            <div class="ctext-wrap">
+                                                <div class="conversation-name">Mahira Vickery</div>
+                                                <div class="ctext-wrap-content">
+                                                    <p class="mb-0">
+                                                        Hello!
+                                                    </p>
+                                                </div>
+                                                <p class="chat-time mb-0"><i class="mdi mdi-clock-outline me-1"></i>
+                                                    10:00</p>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <!-- end li -->
+                                    <li class="right">
+                                        <div class="conversation-list">
+                                            <div class="ctext-wrap">
+                                                <div class="conversation-name">Ricky Clark</div>
+                                                <div class="ctext-wrap-content">
+                                                    <p class="mb-0">
+                                                        Hi, How are you? What about our next meeting?
+                                                    </p>
+                                                </div>
+
+                                                <p class="chat-time mb-0"><i class="mdi mdi-clock-outline me-1"></i>
+                                                    10:02</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <div class="conversation-list">
+                                            <div class="chat-avatar">
+                                                <img src="assets/images/users/avatar-1.jpg" alt="avatar-2">
+                                            </div>
+                                            <div class="ctext-wrap">
+                                                <div class="conversation-name">Mahira Vickery</div>
+                                                <div class="ctext-wrap-content">
+                                                    <p class="mb-0">
+                                                        Yeah everything is fine
+                                                    </p>
+                                                </div>
+
+                                                <p class="chat-time mb-0"><i class="mdi mdi-clock-outline me-1"></i>
+                                                    10:06</p>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <!-- end li -->
+                                    <li>
+                                        <div class="conversation-list">
+                                            <div class="chat-avatar">
+                                                <img src="assets/images/users/avatar-1.jpg" alt="avatar-2">
+                                            </div>
+                                            <div class="ctext-wrap">
+                                                <div class="conversation-name">Mahira Vickery</div>
+                                                <div class="ctext-wrap-content">
+                                                    <p class="mb-0">& Next meeting tomorrow 10.00AM</p>
+                                                </div>
+                                                <p class="chat-time mb-0"><i class="mdi mdi-clock-outline me-1"></i>
+                                                    10:06</p>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <!-- end li -->
+                                    <li class="right">
+                                        <div class="conversation-list">
+                                            <div class="ctext-wrap">
+                                                <div class="conversation-name">Ricky Clark</div>
+                                                <div class="ctext-wrap-content">
+                                                    <p class="mb-0">
+                                                        Wow that's great
+                                                    </p>
+                                                </div>
+
+                                                <p class="chat-time mb-0"><i class="mdi mdi-clock-outline me-1"></i>
+                                                    10:07</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- end li -->
+                                </ul>
+                                <!-- end ul -->
+                            </div>
+
+                        </div>
+                        <div class="px-lg-3">
+                            <div class="p-3 chat-input-section">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control chat-input"
+                                                placeholder="Enter Message...">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit"
+                                            class="btn btn-primary chat-send w-md waves-effect waves-light"><span
+                                                class="d-none d-sm-inline-block me-2">Send</span> <i
+                                                class="mdi mdi-send"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        @@include("partials/footer.html")
+
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+@@include("partials/right-sidebar.html")
+
+@@include("partials/vendor-scripts.html")
+
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

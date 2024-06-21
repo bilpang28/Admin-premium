@@ -1,0 +1,228 @@
+// 
+// topbar.scss
+//
+
+
+.navbar-custom {
+    background-color: $bg-topbar-dark;
+    padding: 0 15px 0px 25px;
+    position: fixed;
+    top: 0px;
+    left: $leftbar-width;
+    right: 0px;
+    height: $topbar-height;
+    box-shadow: $box-shadow;
+    z-index: 100;
+
+    .topnav-menu {
+        > li {
+            float: left;
+        }
+        .nav-link {
+            padding: 0 15px;
+            color: rgba($white, 0.8);
+            min-width: 32px;
+            display: block;
+            line-height: $topbar-height;
+            text-align: center;
+            max-height: $topbar-height;
+        }
+    }
+    .dropdown.show {
+        .nav-link {
+            background-color: rgba($white,0.05);
+        }   
+    }
+
+    .menu-left {
+        overflow: hidden;
+    }
+
+    /* Search */
+    .app-search {
+        padding: 16px 0;
+        overflow: hidden;
+        form {
+            max-width: 320px;
+        }
+        .form-control {
+            border: none;
+            height: 38px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: $white;
+            background-color: rgba($white,0.05);
+            box-shadow: none;
+        }
+    }
+    
+
+    .button-menu-mobile {
+        border: none;
+        color: $white;
+        display: block;
+        height: $topbar-height;
+        line-height: $topbar-height;
+        width: 60px;
+        background-color: transparent;
+        font-size: 24px;
+        cursor: pointer;
+
+        &.disable-btn {
+            display: none;
+        }
+    }
+
+}
+
+
+/* Notification */
+.noti-scroll {
+    max-height: 230px;
+}
+
+.notification-list {
+    margin-left: 0;
+
+    .noti-title {
+        background-color: $light;
+        padding: 15px 20px;
+    }
+
+    .noti-icon {
+        font-size: 21px;
+        vertical-align: middle;
+    }
+
+    .noti-icon-badge {
+        display: inline-block;
+        position: absolute;
+        top: 14px;
+        right: 12px;
+    }
+
+    .notify-item {
+        padding: 12px 20px;
+
+        .notify-icon {
+            float: left;
+            height: 36px;
+            width: 36px;
+            font-size: 16px;
+            line-height: 36px;
+            text-align: center;
+            margin-right: 10px;
+            border-radius: 50%;
+            color: $white;
+        }
+
+        .notify-details {
+            margin-bottom: 5px;
+            overflow: hidden;
+            margin-left: 45px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $gray-800;
+            
+
+            b {
+                font-weight: 500;
+            }
+            small {
+                display: block;
+            }
+            span {
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 13px;
+            }
+        }
+        
+        .user-msg {
+            margin-left: 45px;
+            white-space: normal;
+            line-height: 16px;
+        }
+    }
+    .profile-dropdown {
+        .notify-item {
+            padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+        }
+    }
+}
+
+.profile-dropdown {
+    width: 170px;
+    i {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}
+
+.nav-user {
+    padding: 0 12px !important;
+    img {
+        height: 32px;
+        width: 32px;
+    }
+}
+
+// Topbar dark
+
+.topbar-light {
+    .navbar-custom {
+        background-color: $bg-topbar-light !important;
+        
+        .dropdown.show {
+            .nav-link {
+                background-color: lighten($bg-topbar-light, 2%);
+            }   
+        }
+    
+        .button-menu-mobile {
+            color: $dark;
+        }
+
+        .waves-effect{
+            .waves-ripple {
+                background: rgba($dark, 0.4);
+                background: radial-gradient(rgba($dark, 0.2) 0, rgba($dark, 0.3) 40%, rgba($dark, 0.4) 50%, rgba($dark, 0.5) 60%, rgba($dark, 0) 70%);
+            }
+        }
+    
+        /* Search */
+        .app-search {
+            .form-control {
+                color: $dark;
+                background-color: lighten($bg-topbar-light,2%);
+                &::placeholder{
+                    color: $dark;
+                }
+            }
+            .btn-primary{
+                background-color: lighten($bg-topbar-light,2%);
+                border-color: lighten($bg-topbar-light,2%);
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .navbar-custom{
+        left: 0;
+        padding: 0 10px;
+
+        .button-menu-mobile.disable-btn {
+            display: inline-block;
+        }
+    }
+
+    .left-side-menu-sm {
+        .navbar-custom{
+            left: 0px;
+        }
+    }
+}
+

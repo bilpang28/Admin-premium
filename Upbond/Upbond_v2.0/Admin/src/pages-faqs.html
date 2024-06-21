@@ -1,0 +1,547 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "FAQs"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    @@include("partials/menu.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                @@include("partials/page-title.html", {"pagetitle": "Utility", "title": "FAQs"})
+
+
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h4 class="mb-5">Frequently Asked Questions ?</h4>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+
+                <div class="checkout-tabs">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-gen-ques-tab" data-bs-toggle="pill"
+                                    href="#v-pills-gen-ques" role="tab" aria-controls="v-pills-gen-ques"
+                                    aria-selected="true">
+                                    <i class="mdi mdi-help d-block check-nav-icon mt-4 mb-2"></i>
+                                    <p class="fw-bold mb-4">General Questions</p>
+                                </a>
+                                <!-- end  -->
+                                <a class="nav-link" id="v-pills-privacy-tab" data-bs-toggle="pill"
+                                    href="#v-pills-privacy" role="tab" aria-controls="v-pills-privacy"
+                                    aria-selected="false">
+                                    <i class="mdi mdi-security d-block check-nav-icon mt-4 mb-2"></i>
+                                    <p class="fw-bold mb-4">Privacy Policy</p>
+                                </a>
+                                <!-- end -->
+                                <a class="nav-link" id="v-pills-support-tab" data-bs-toggle="pill"
+                                    href="#v-pills-support" role="tab" aria-controls="v-pills-support"
+                                    aria-selected="false">
+                                    <i class="mdi mdi-headphones d-block check-nav-icon mt-4 mb-2"></i>
+                                    <p class="fw-bold mb-4">Support</p>
+                                </a>
+                                <!-- end -->
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-10">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="v-pills-gen-ques" role="tabpanel"
+                                            aria-labelledby="v-pills-gen-ques-tab">
+
+                                            <h4 class="card-title mb-4">General Questions</h4>
+                                            <div class="custom-accordion-arrow" id="gen-question-accordion">
+                                                <div class="card mb-1">
+                                                    <a href="#gen-question-accordion-one" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseOne">
+                                                        <div class="card-header" id="privacy-headingOne">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                Why do we use it ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+                                                    <div id="gen-question-accordion-one" class="collapse"
+                                                        aria-labelledby="privacy-headingOne"
+                                                        data-bs-parent="#gen-question-accordion">
+                                                        <div class="card-body">
+                                                            Everyone realizes why a new common language
+                                                            would be desirable one could refuse to pay
+                                                            expensive translators. To achieve this, it
+                                                            would
+                                                            be necessary to have uniform grammar,
+                                                            pronunciation and more common words.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#gen-question-accordion-Two" class="text-dark"
+                                                        data-bs-toggle="collapse" aria-expanded="true"
+                                                        aria-controls="privacy-collapseTwo">
+                                                        <div class="card-header" id="privacy-headingTwo">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                What is Lorem Ipsum ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+
+                                                    <div id="gen-question-accordion-Two" class="collapse show"
+                                                        aria-labelledby="privacy-headingOne"
+                                                        data-bs-parent="#gen-question-accordion">
+                                                        <div class="card-body">
+                                                            If several languages coalesce, the grammar
+                                                            of
+                                                            the resulting language is more simple and
+                                                            regular than that of the individual
+                                                            languages.
+                                                            The new common language will be more simple
+                                                            and
+                                                            regular than the existing
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#gen-question-accordion-Three" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseThree">
+                                                        <div class="card-header" id="privacy-headingThree">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                Where can I get some ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+                                                    <div id="gen-question-accordion-Three" class="collapse"
+                                                        aria-labelledby="privacy-headingThree"
+                                                        data-bs-parent="#gen-question-accordion">
+                                                        <div class="card-body">
+                                                            Their separate existence is a myth. For
+                                                            science,
+                                                            music, sport, etc, Europe uses the same
+                                                            vocabulary. The languages only differ in
+                                                            their
+                                                            grammar, their pronunciation and their most
+                                                            common words.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#gen-question-accordion-Four" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseFour">
+                                                        <div class="card-header" id="privacy-headingFour">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                Where does it come from ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+                                                    <div id="gen-question-accordion-Four" class="collapse"
+                                                        aria-labelledby="privacy-headingFour"
+                                                        data-bs-parent="#gen-question-accordion">
+                                                        <div class="card-body">
+                                                            To an English person, it will seem like
+                                                            simplified English, as a skeptical Cambridge
+                                                            friend of mine told me what Occidental is.
+                                                            The
+                                                            European languages are members of the same
+                                                            family separate existence.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#gen-question-accordion-Five" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseFive">
+                                                        <div class="card-header" id="privacy-headingFive">
+                                                            <div class="d-flex">
+                                                                <h5 class="font-size-14 m-0">
+                                                                    <i
+                                                                        class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                    Where can I get some ?
+                                                                </h5>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+                                                    <div id="gen-question-accordion-Five" class="collapse"
+                                                        aria-labelledby="privacy-headingFive"
+                                                        data-bs-parent="#gen-question-accordion">
+                                                        <div class="card-body">
+                                                            It will be as simple in fact, it will be
+                                                            occidental. To an English person, it will
+                                                            seem
+                                                            like simplified English, as a skeptical
+                                                            Cambridge friend of mine told me what
+                                                            occidental
+                                                            languages are members
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                            </div>
+                                            <!-- end -->
+                                        </div>
+                                        <!-- end tab -->
+
+                                        <div class="tab-pane fade" id="v-pills-privacy" role="tabpanel"
+                                            aria-labelledby="v-pills-privacy-tab">
+                                            <h4 class="card-title mb-4">Privacy Policy</h4>
+                                            <div class="custom-accordion-arrow" id="privacy-question-accordion">
+                                                <div class="card">
+                                                    <a href="#privacy-question-accordion-one" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseOne">
+                                                        <div class="card-header" id="privacy-headingOne">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                Where can I get some ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+                                                    <div id="privacy-question-accordion-one" class="collapse"
+                                                        aria-labelledby="privacy-headingOne"
+                                                        data-bs-parent="#privacy-question-accordion">
+                                                        <div class="card-body">
+                                                            Everyone realizes why a new common language
+                                                            would be desirable one could refuse to pay
+                                                            expensive translators. To achieve this, it
+                                                            would
+                                                            be necessary to have uniform grammar,
+                                                            pronunciation and more common words.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#privacy-question-accordion-Two" class="text-dark"
+                                                        data-bs-toggle="collapse" aria-expanded="true"
+                                                        aria-controls="privacy-collapseTwo">
+                                                        <div class="card-header" id="privacy-headingTwo">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                What is Lorem Ipsum ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+
+                                                    <div id="privacy-question-accordion-Two" class="collapse "
+                                                        aria-labelledby="privacy-headingOne"
+                                                        data-bs-parent="#privacy-question-accordion">
+                                                        <div class="card-body">
+                                                            If several languages coalesce, the grammar
+                                                            of
+                                                            the resulting language is more simple and
+                                                            regular than that of the individual
+                                                            languages.
+                                                            The new common language will be more simple
+                                                            and
+                                                            regular than the existing
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#privacy-question-accordion-Three" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseThree">
+                                                        <div class="card-header" id="privacy-headingThree">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                Why do we use it ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+                                                    <div id="privacy-question-accordion-Three" class="collapse"
+                                                        aria-labelledby="privacy-headingThree"
+                                                        data-bs-parent="#privacy-question-accordion">
+                                                        <div class="card-body">
+                                                            Their separate existence is a myth. For
+                                                            science,
+                                                            music, sport, etc, Europe uses the same
+                                                            vocabulary. The languages only differ in
+                                                            their
+                                                            grammar, their pronunciation and their most
+                                                            common words.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#privacy-question-accordion-Four" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseFour">
+                                                        <div class="card-header" id="privacy-headingFour">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                Where does it come from ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+                                                    <div id="privacy-question-accordion-Four" class="collapse"
+                                                        aria-labelledby="privacy-headingFour"
+                                                        data-bs-parent="#privacy-question-accordion">
+                                                        <div class="card-body">
+                                                            To an English person, it will seem like
+                                                            simplified English, as a skeptical Cambridge
+                                                            friend of mine told me what Occidental is.
+                                                            The
+                                                            European languages are members of the same
+                                                            family separate existence.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#privacy-question-accordion-Five" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseFive">
+                                                        <div class="card-header" id="privacy-headingFive">
+                                                            <div class="d-flex">
+                                                                <h5 class="font-size-14 m-0">
+                                                                    <i
+                                                                        class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                    Where can I get some ?
+                                                                </h5>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+                                                    <div id="privacy-question-accordion-Five" class="collapse show"
+                                                        aria-labelledby="privacy-headingFive"
+                                                        data-bs-parent="#privacy-question-accordion">
+                                                        <div class="card-body">
+                                                            It will be as simple in fact, it will be
+                                                            occidental. To an English person, it will
+                                                            seem
+                                                            like simplified English, as a skeptical
+                                                            Cambridge friend of mine told me what
+                                                            occidental
+                                                            languages are members
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                            </div>
+                                            <!-- end -->
+                                        </div>
+                                        <!-- end tab-pane -->
+                                        <div class="tab-pane fade" id="v-pills-support" role="tabpanel"
+                                            aria-labelledby="v-pills-support-tab">
+                                            <h4 class="card-title mb-4">Support</h4>
+                                            <div class="custom-accordion-arrow" id="support-question-accordion">
+                                                <div class="card">
+                                                    <a href="#support-question-accordion-One" class="text-dark"
+                                                        data-bs-toggle="collapse" aria-expanded="true"
+                                                        aria-controls="privacy-collapse-One">
+                                                        <div class="card-header" id="support-headingTwo">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                What is Lorem Ipsum ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+
+                                                    <div id="support-question-accordion-One" class="collapse show"
+                                                        aria-labelledby="privacy-headingOne"
+                                                        data-bs-parent="#support-question-accordion">
+                                                        <div class="card-body">
+                                                            If several languages coalesce, the grammar
+                                                            of
+                                                            the resulting language is more simple and
+                                                            regular than that of the individual
+                                                            languages.
+                                                            The new common language will be more simple
+                                                            and
+                                                            regular than the existing
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#support-question-accordion-Two" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseOne">
+                                                        <div class="card-header" id="privacy-headingOne">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                Why do we use it ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+                                                    <div id="support-question-accordion-Two" class="collapse"
+                                                        aria-labelledby="privacy-headingOne"
+                                                        data-bs-parent="#support-question-accordion">
+                                                        <div class="card-body">
+                                                            Everyone realizes why a new common language
+                                                            would be desirable one could refuse to pay
+                                                            expensive translators. To achieve this, it
+                                                            would
+                                                            be necessary to have uniform grammar,
+                                                            pronunciation and more common words.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+
+                                                <div class="card mb-1">
+                                                    <a href="#support-question-accordion-Three" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseThree">
+                                                        <div class="card-header" id="privacy-headingThree">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                Where can I get some ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+                                                    <div id="support-question-accordion-Three" class="collapse"
+                                                        aria-labelledby="privacy-headingThree"
+                                                        data-bs-parent="#support-question-accordion">
+                                                        <div class="card-body">
+                                                            Their separate existence is a myth. For
+                                                            science,
+                                                            music, sport, etc, Europe uses the same
+                                                            vocabulary. The languages only differ in
+                                                            their
+                                                            grammar, their pronunciation and their most
+                                                            common words.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#support-question-accordion-Five" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseFive">
+                                                        <div class="card-header" id="privacy-headingFive">
+                                                            <div class="d-flex">
+                                                                <h5 class="font-size-14 m-0">
+                                                                    <i
+                                                                        class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                    Where can I get some ?
+                                                                </h5>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+                                                    <div id="support-question-accordion-Five" class="collapse"
+                                                        aria-labelledby="privacy-headingFive"
+                                                        data-bs-parent="#support-question-accordion">
+                                                        <div class="card-body">
+                                                            It will be as simple in fact, it will be
+                                                            occidental. To an English person, it will
+                                                            seem
+                                                            like simplified English, as a skeptical
+                                                            Cambridge friend of mine told me what
+                                                            occidental
+                                                            languages are members
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                                <div class="card mb-1">
+                                                    <a href="#support-question-accordion-Four" class="collapsed"
+                                                        data-bs-toggle="collapse" aria-expanded="false"
+                                                        aria-controls="privacy-collapseFour">
+                                                        <div class="card-header" id="privacy-headingFour">
+                                                            <h5 class="font-size-14 m-0">
+                                                                <i
+                                                                    class="mdi mdi-chevron-double-up accor-arrow-icon"></i>
+                                                                Where does it come from ?
+                                                            </h5>
+                                                        </div>
+                                                    </a>
+                                                    <div id="support-question-accordion-Four" class="collapse"
+                                                        aria-labelledby="privacy-headingFour"
+                                                        data-bs-parent="#support-question-accordion">
+                                                        <div class="card-body">
+                                                            To an English person, it will seem like
+                                                            simplified English, as a skeptical Cambridge
+                                                            friend of mine told me what Occidental is.
+                                                            The
+                                                            European languages are members of the same
+                                                            family separate existence.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+
+                                            </div>
+                                            <!-- end -->
+                                        </div>
+                                        <!-- end tab-pane -->
+                                    </div>
+                                    <!-- end tab-content -->
+                                </div>
+                                <!-- end cardbody -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end -->
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+
+        @@include("partials/footer.html")
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+@@include("partials/right-sidebar.html")
+
+@@include("partials/vendor-scripts.html")
+
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

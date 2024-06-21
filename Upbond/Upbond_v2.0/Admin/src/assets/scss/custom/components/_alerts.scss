@@ -1,0 +1,13 @@
+
+// alert
+
+  .alert-outline {
+    background-color: $card-bg;
+    border-width: 2px;
+    .alert-outline.alert-primary {
+      border-color: $primary;
+      color: $primary; 
+    }
+  }
+
+  
